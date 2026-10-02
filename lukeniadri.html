@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lukeniadri – Construções e Obras Públicas | Luanda, Benfica</title>
+    <meta name="description" content="A Lukeniadri – Construções e Obras Públicas cuida de todo o processo, desde o fornecimento até à instalação profissional, garantindo acabamentos impecáveis em Luanda, Angola." />
+    <meta property="og:title" content="Lukeniadri – Construções e Obras Públicas | Luanda, Benfica" />
+    <meta property="og:description" content="A Lukeniadri cuida de todo o processo, desde o fornecimento até à instalação profissional, garantindo acabamentos impecáveis." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN para funcionamento 100% autónomo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: '#0E4D82',
+                dark: '#08375E',
+                light: '#1D70B8'
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              serif: ['"Space Grotesk"', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      ::selection { background-color: #0E4D82; color: #FFFFFF; }
+    </style>
+  </head>
+  <body class="bg-[#F8FAFC] text-slate-900 antialiased font-sans">
+
+    <!-- 1. HEADER -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all py-3 shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4">
+          
+          <a href="#inicio" class="flex items-center gap-3.5 group">
+            <div class="w-10 h-10 md:w-11 md:h-11 shrink-0">
+              <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full select-none">
+                <path d="M80 82L24 50V110L80 142V82Z" fill="#0E4D82" />
+                <path d="M36 60L54 70V105L70 114V126L36 107V60Z" fill="#FFFFFF" />
+                <path d="M80 82L136 50V110L80 142V82Z" fill="#1D70B8" />
+                <path d="M88 126V88L106 100V126H88Z" fill="#FFFFFF" />
+                <path d="M106 100L124 74V112H116V95L102 116H94L88 107V88L106 100Z" fill="#FFFFFF" />
+                <path d="M80 22L136 50L80 82L24 50L80 22Z" fill="#08375E" />
+                <path d="M80 34L120 54L80 74L40 54L80 34Z" fill="#FFFFFF" />
+                <path d="M80 44L102 54L80 64L58 54L80 44Z" fill="#0E4D82" />
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-lg md:text-xl font-bold tracking-tight font-serif leading-none text-[#0E4D82]">LUKENIADRI</span>
+              <span class="text-[9px] md:text-[10px] tracking-wider uppercase font-semibold text-slate-800 mt-1">Construções e Obras Públicas</span>
+            </div>
+          </a>
+
+          <nav class="hidden lg:flex items-center gap-7">
+            <a href="#inicio" class="text-sm font-medium text-slate-700 hover:text-[#0E4D82] transition-colors">Início</a>
+            <a href="#sobre" class="text-sm font-medium text-slate-700 hover:text-[#0E4D82] transition-colors">Sobre Nós</a>
+            <a href="#servicos" class="text-sm font-medium text-slate-700 hover:text-[#0E4D82] transition-colors">Serviços</a>
+            <a href="#obras" class="text-sm font-medium text-slate-700 hover:text-[#0E4D82] transition-colors">Obras Públicas</a>
+            <a href="#processo" class="text-sm font-medium text-slate-700 hover:text-[#0E4D82] transition-colors">O Processo</a>
+            <a href="#simulador" class="text-sm font-medium text-slate-700 hover:text-[#0E4D82] transition-colors">Simulador</a>
+            <a href="#contacto" class="text-sm font-medium text-slate-700 hover:text-[#0E4D82] transition-colors">Contacto</a>
+          </nav>
+
+          <div class="hidden sm:flex items-center gap-3.5">
+            <a href="tel:+244950233950" class="flex items-center gap-2 text-xs font-semibold text-slate-800 hover:text-[#0E4D82] px-3 py-2 rounded-md hover:bg-slate-100 transition-colors">
+              <span class="tabular-nums">950 233 950</span>
+            </a>
+            <a href="#contacto" class="inline-flex items-center gap-2 px-4 py-2.5 text-xs font-semibold text-white bg-[#0E4D82] hover:bg-[#0B3B60] transition-all rounded-lg shadow-sm">
+              Pedir Orçamento →
+            </a>
+          </div>
+
+          <button onclick="document.getElementById('m-menu').classList.toggle('hidden')" class="p-2 text-slate-700 lg:hidden">
+            ☰
+          </button>
+
+        </div>
+      </div>
+
+      <div id="m-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-2">
+        <a href="#inicio" class="block px-3 py-2 text-slate-800 hover:text-[#0E4D82]">Início</a>
+        <a href="#sobre" class="block px-3 py-2 text-slate-800 hover:text-[#0E4D82]">Sobre Nós</a>
+        <a href="#servicos" class="block px-3 py-2 text-slate-800 hover:text-[#0E4D82]">Serviços</a>
+        <a href="#obras" class="block px-3 py-2 text-slate-800 hover:text-[#0E4D82]">Obras Públicas</a>
+        <a href="#processo" class="block px-3 py-2 text-slate-800 hover:text-[#0E4D82]">O Processo</a>
+        <a href="#simulador" class="block px-3 py-2 text-slate-800 hover:text-[#0E4D82]">Simulador</a>
+        <a href="#contacto" class="block px-3 py-2 text-slate-800 hover:text-[#0E4D82]">Contacto</a>
+        <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+          <a href="tel:+244950233950" class="text-center py-2.5 bg-slate-100 rounded-lg text-xs font-bold text-slate-800">Ligar: 950 233 950</a>
+          <a href="#contacto" class="text-center py-2.5 bg-[#0E4D82] rounded-lg text-xs font-bold text-white">Pedir Orçamento</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. HERO -->
+    <section id="inicio" class="relative min-h-[90vh] flex items-center pt-24 pb-16 bg-slate-950">
+      <div class="absolute inset-0 z-0">
+        <img src="/src/assets/images/hero_construction_modern_1790862773844.jpg" alt="Lukeniadri Construções" class="w-full h-full object-cover filter brightness-[0.85]" />
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-slate-900/60"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold text-sky-300 mb-6 bg-slate-900/80 border border-slate-700 px-3.5 py-1.5 rounded-md">
+            <span>Sede em Luanda, Benfica · Angola</span>
+            <span>|</span>
+            <span>Construção Civil & Obras Públicas</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 font-serif">
+            Construção de Alto Padrão e Obras Públicas com <span class="text-sky-400">Rigor Técnico</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-200 leading-relaxed mb-8 border-l-2 border-[#1D70B8] pl-4 bg-slate-900/40 py-2 rounded-r-lg">
+            A <strong class="text-white">Lukeniadri – Construções e Obras Públicas</strong> cuida de todo o processo, desde o fornecimento até à instalação profissional, garantindo acabamentos impecáveis que aumentam o valor do seu espaço e proporcionam bem-estar no dia a dia.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 mb-10">
+            <a href="#contacto" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-bold text-white bg-[#0E4D82] hover:bg-[#125d9c] rounded-lg shadow-lg">
+              Solicitar Orçamento Gratuito →
+            </a>
+            <a href="#simulador" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-slate-200 bg-slate-900 border border-slate-700 rounded-lg">
+              Simular Estimativa de Obra
+            </a>
+            <a href="tel:+244950233950" class="inline-flex items-center justify-center text-sm font-bold text-slate-300 hover:text-white px-4 py-3.5">
+              950 233 950
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t border-slate-800">
+            <div class="text-xs text-slate-300">✓ <strong>Do Fornecimento à Instalação</strong><br><span class="text-slate-400">Solução integrada</span></div>
+            <div class="text-xs text-slate-300">✓ <strong>Acabamentos Impecáveis</strong><br><span class="text-slate-400">Precisão de excelência</span></div>
+            <div class="text-xs text-slate-300">✓ <strong>Conformidade e Segurança</strong><br><span class="text-slate-400">Luanda, Benfica</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SOBRE NÓS -->
+    <section id="sobre" class="py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6">
+            <img src="/src/assets/images/construction_team_engineering_1790862815235.jpg" alt="Equipa Técnica" class="rounded-2xl border border-slate-200 shadow-xl object-cover aspect-[4/3] w-full" />
+          </div>
+          <div class="lg:col-span-6">
+            <span class="text-xs font-bold uppercase text-[#0E4D82] tracking-wider block mb-2">Quem Somos & Filosofia</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-950 mb-6 font-serif">Solidez, Rigor e Confiança Edificada em Angola</h2>
+            <p class="text-base text-slate-700 leading-relaxed mb-4">
+              A <strong>Lukeniadri – Construções e Obras Públicas, (SU), LDA</strong> é uma empresa angolana sediada em <strong>Luanda, Benfica</strong>, focada em entregar soluções completas de engenharia civil, infraestruturas públicas, remodelações e acabamentos refinados.
+            </p>
+            <p class="text-base text-slate-700 leading-relaxed mb-6">
+              Assumimos a responsabilidade global pelo ciclo construtivo: <em>desde o fornecimento de matérias-primas e equipamentos até à instalação profissional com acabamentos impecáveis</em>, garantindo valorização do seu espaço e bem-estar no dia a dia.
+            </p>
+            <div class="grid grid-cols-2 gap-4 border-t border-slate-200 pt-4 text-xs text-slate-700">
+              <div>✓ <strong>Rigor Técnico</strong><br>Normas e segurança estrutural</div>
+              <div>✓ <strong>Instalação Profissional</strong><br>Encarregados experientes</div>
+              <div>✓ <strong>Pontualidade</strong><br>Prazos e orçamentos claros</div>
+              <div>✓ <strong>Proximidade</strong><br>Base em Luanda, Benfica</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CONTACTOS -->
+    <section id="contacto" class="py-20 bg-[#F8FAFC]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs font-bold uppercase text-[#0E4D82] tracking-wider block mb-2">Atendimento & Orçamentação</span>
+          <h2 class="text-3xl font-extrabold text-slate-950 font-serif">Inicie a Sua Obra com a Lukeniadri</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-5 bg-white p-7 rounded-2xl border border-slate-200 space-y-4">
+            <div>
+              <span class="text-xs font-bold text-slate-500 uppercase block">Sede Operacional</span>
+              <p class="text-sm font-semibold text-slate-900">Luanda, Benfica · Angola</p>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-slate-500 uppercase block">Telefone Direto</span>
+              <a href="tel:+244950233950" class="text-base font-bold text-[#0E4D82]">950 233 950</a>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-slate-500 uppercase block">E-mail</span>
+              <a href="mailto:lukeniadrigeral@lukeniadri.co" class="text-sm font-semibold text-[#0E4D82]">lukeniadrigeral@lukeniadri.co</a>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-slate-500 uppercase block">Horário</span>
+              <p class="text-xs text-slate-700">Segunda a Sexta: 08:00 – 18:00 | Sábado: 08:00 – 13:00</p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 bg-white p-7 rounded-2xl border border-slate-200">
+            <h3 class="text-lg font-bold text-slate-900 mb-4">Pedido Rápido de Orçamento</h3>
+            <form onsubmit="event.preventDefault(); window.open('https://wa.me/244950233950?text=' + encodeURIComponent('Olá Lukeniadri! Gostaria de pedir um orçamento para uma obra em Luanda.'), '_blank');" class="space-y-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nome Completo</label>
+                <input type="text" required placeholder="Ex: Eng. António Silva" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-xs" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Telefone / WhatsApp</label>
+                <input type="tel" required placeholder="Ex: 950 233 950" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-xs" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Serviço Pretendido</label>
+                <select class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-xs">
+                  <option>Acabamentos Impecáveis & Revestimentos</option>
+                  <option>Construção Civil de Raiz</option>
+                  <option>Obras Públicas e Infraestruturas</option>
+                  <option>Remodelação Integral</option>
+                  <option>Fornecimento de Materiais</option>
+                </select>
+              </div>
+              <button type="submit" class="w-full py-3 bg-[#0E4D82] text-white text-xs font-bold uppercase rounded-lg hover:bg-[#0B3B60]">
+                Enviar Pedido de Orçamento via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <p class="font-bold text-white text-sm">LUKENIADRI – Construções e Obras Públicas, (SU), LDA</p>
+        <p class="max-w-xl mx-auto">
+          "A Lukeniadri – Construções e Obras Públicas cuida de todo o processo, desde o fornecimento até à instalação profissional, garantindo acabamentos impecáveis que aumentam o valor do seu espaço e proporcionam bem-estar no dia a dia."
+        </p>
+        <p>Luanda, Benfica · Telefone: 950 233 950 · E-mail: lukeniadrigeral@lukeniadri.co</p>
+        <p class="text-slate-600">© 2026 Lukeniadri. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
